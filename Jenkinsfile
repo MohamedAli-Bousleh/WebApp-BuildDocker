@@ -1,6 +1,6 @@
 def pipelineContext = [:]
 node {
-   def registryProjet='registry.gitlab.com/MohamedAlibousleh/jenkinsdocker/container_registry'
+   def registryProjet='registry.gitlab.com/MohamedAlibousleh/jenkinsdocker/container_registry/wartest'
    def IMAGE="${registryProjet}:version-${env.BUILD_ID}"
     stage('Clone') {
           git 'https://github.com/MohamedAli-Bousleh/WebApp-BuildDocker.git'
